@@ -50,7 +50,8 @@ public class CourseServiceImpl implements CourseService{
 				break;
 			}
 		}*/
-		return courseDao.getOne(courseId);
+		//return courseDao.getOne(courseId);
+		return courseDao.findById(courseId).get();
 	}
 
 
